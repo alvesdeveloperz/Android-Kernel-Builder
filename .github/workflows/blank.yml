@@ -138,11 +138,11 @@ jobs:
 
           curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5
           
-          echo -e "CONFIG_KPROBES=y" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
-          echo -e "CONFIG_HAVE_KPROBES=y" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
-          echo -e "CONFIG_KPROBE_EVENTS=y" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
+          echo -e "CONFIG_KPROBES=y" >> arch/${{ env.arch }}/configs/vendor/${{ env.DEFCONFIG_NAME }}
+          echo -e "CONFIG_HAVE_KPROBES=y" >> arch/${{ env.arch }}/configs/vendor/${{ env.DEFCONFIG_NAME }}
+          echo -e "CONFIG_KPROBE_EVENTS=y" >> arch/${{ env.arch }}/configs/vendor/${{ env.DEFCONFIG_NAME }}
 
-          cat arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
+          cat arch/${{ env.arch }}/configs/vendor/${{ env.DEFCONFIG_NAME }}
 
       - name: "👍 Make defconfig"
         working-directory: ${{ env.KERNEL_NAME }}
