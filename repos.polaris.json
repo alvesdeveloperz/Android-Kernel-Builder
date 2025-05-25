@@ -1,13 +1,13 @@
 [
   {
     "kernelSource": {
-      "name": "kernel_xiaomi_mt6893",
-      "repo": "https://github.com/MTK6893/android_kernel_xiaomi_mt6893",
-      "branch": "Baklava",
-      "device": "ares",
-      "defconfig": "ares_defconfig"
+      "name": "kernel_xiaomi_msm8937",
+      "repo": "https://github.com/jsdizkcksv/android_kernel_xiaomi_msm8937",
+      "branch": "A16",
+      "device": "msm8937",
+      "defconfig": "msm8937_defconfig"
     },
-    "withKernelSU": true,
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://github.com/Akitlove/android-kernel-tools",
