@@ -3,11 +3,11 @@
     "kernelSource": {
       "name": "kernel_xiaomi_Mi8937",
       "repo": "https://github.com/console-ramoops/kernel_xiaomi_Mi8937",
-      "branch": "16-exp",
+      "branch": "16-ksu",
       "device": "mi8937",
-      "defconfig": "mi8937_defconfig"
+      "defconfig": "Mi8937_defconfig"
     },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
       {
         "repo": "https://github.com/Akitlove/android-kernel-tools",
