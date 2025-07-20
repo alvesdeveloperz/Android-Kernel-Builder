@@ -10,8 +10,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://github.com/Akitlove/android-kernel-tools",
-        "branch": "clang13",
+        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
+        "branch": "14",
         "name": "clang13",
         "binPath": ["./bin"]
       }
