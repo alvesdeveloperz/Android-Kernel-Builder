@@ -21,9 +21,7 @@
       "CC": "zyc_clang/bin/clang",
       "externalCommand": {
         "CROSS_COMPILE": "zyc_clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "zyc_clang/bin/arm-linux-gnueabi-",
-        "LD": "zyc_clang/bin/ld.lld",
-        "HOSTCFLAGS": "-fuse-ld=lld -Wno-unused-command-line-argument"
+        "CROSS_COMPILE_ARM32": "zyc_clang/bin/arm-linux-gnueabi-"
       }
     },
     "AnyKernel3": {
