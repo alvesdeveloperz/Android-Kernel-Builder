@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "kernel_xiaomi_msm8937",
-      "repo": "https://github.com/console-ramoops/kernel_xiaomi_msm8937",
-      "branch": "16-ksunxt",
+      "repo": "https://gitea.com/console-ramoops/kernel_xiaomi_msm8937",
+      "branch": "Baklava",
       "device": "santoni",
       "defconfig": "santoni_treble_defconfig"
     },
