@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "kernel_xiaomi_msm8937",
-      "repo": "https://gitlab.com/androidsantoni/kernel/kernel_xiaomi_msm8937",
-      "branch": "nexus",
+      "repo": "https://github.com/console-ramoops/kernel_xiaomi_Mi8937",
+      "branch": "13",
       "device": "mi8937",
       "defconfig": "nexus_defconfig"
     },
