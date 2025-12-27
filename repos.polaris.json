@@ -2,12 +2,12 @@
   {
     "kernelSource": {
       "name": "kernel_xiaomi_msm8937",
-      "repo": "https://gitea.com/console-ramoops/kernel_xiaomi_msm8937",
-      "branch": "Baklava",
-      "device": "santoni",
-      "defconfig": "santoni_treble_defconfig"
+      "repo": "https://github.com/ItoRenz-Build/kernel_xiaomi_msm8937",
+      "branch": "12.1",
+      "device": "mi8937",
+      "defconfig": "mi8937_defconfig"
     },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
       {
         "repo": "https://gitlab.com/clangsantoni/zyc_clang",
