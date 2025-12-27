@@ -144,13 +144,12 @@ jobs:
 
           cat arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
 
-            git clone --depth=1 https://github.com/devnoname120/kernelsu-coccinelle.git
 
             # Patch the kernel source with scope-minimized hooks
-            ./kernelsu-coccinelle/scope-minimized-hooks/apply.sh .
+            #    ./kernelsu-coccinelle/scope-minimized-hooks/apply.sh .
 
             # Cleanup
-            rm -rf ./kernelsu-coccinelle/
+            # rm -rf ./kernelsu-coccinelle/
 
       - name: "👍 Make defconfig"
         working-directory: ${{ env.KERNEL_NAME }}
