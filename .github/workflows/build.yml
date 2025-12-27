@@ -168,6 +168,8 @@ jobs:
         working-directory: ${{ env.KERNEL_NAME }}
         env:
           args: ${{ steps.generate-args.outputs.args }}
+          KBUILD_BUILD_USER: "builder"
+          KBUILD_BUILD_HOST: "android"
         run: |
           echo "PATH Variable: $PATH"
           make ${args}
