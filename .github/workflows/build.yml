@@ -42,6 +42,9 @@ jobs:
 
       builddate: "${{ needs.Set-repos.outputs.builddate }}"
 
+      KBUILD_BUILD_USER: "builder"
+      KBUILD_BUILD_HOST: "android"
+  
       KERNEL_NAME: ${{ matrix.repos.kernelSource.name }}
       KERNEL_REPO: ${{ matrix.repos.kernelSource.repo }}
       KERNEL_BRANCH: ${{ matrix.repos.kernelSource.branch }}
