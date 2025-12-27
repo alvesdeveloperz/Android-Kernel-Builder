@@ -7,7 +7,7 @@
       "device": "mi8937",
       "defconfig": "mi8937_defconfig"
     },
-    "withKernelSU": true,
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://gitlab.com/clangsantoni/zyc_clang",
