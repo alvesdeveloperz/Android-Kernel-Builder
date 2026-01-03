@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "kernel_xiaomi_msm8937",
-      "repo": "https://github.com/console-ramoops/kernel_xiaomi_Mi8937",
-      "branch": "16",
-      "device": "mi8937",
-      "defconfig": "mi8937_defconfig"
+      "name": "android_kernel_xiaomi_sdm710",
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm710",
+      "branch": "lineage-22.2",
+      "device": "pyxis",
+      "defconfig": "xiaomi/sdm710-common.config xiaomi/pyxis.config"
     },
     "withKernelSU": true,
     "toolchains": [
@@ -21,7 +21,13 @@
       "CC": "zyc_clang/bin/clang",
       "externalCommand": {
         "CROSS_COMPILE": "zyc_clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "zyc_clang/bin/arm-linux-gnueabi-"
+        "CROSS_COMPILE_ARM32": "zyc_clang/bin/arm-linux-gnueabi-",
+        "LD": "zyc_clang/bin/ld.lld",
+        "AR": "zyc_clang/bin/llvm-ar",
+        "NM": "zyc_clang/bin/llvm-nm",
+        "OBJCOPY": "zyc_clang/bin/llvm-objcopy",
+        "OBJDUMP": "zyc_clang/bin/llvm-objdump",
+        "STRIP": "zyc_clang/bin/llvm-strip"
       }
     },
     "AnyKernel3": {
